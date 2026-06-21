@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐鱼体育 · 简明访问指南</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      background-color: #f4f6f7;
+      color: #1e2a3a;
+      line-height: 1.75;
+    }
+    /* 深色头图 */
+    .hero {
+      background: linear-gradient(145deg, #0b1a2b 0%, #1a2d45 100%);
+      color: #eef3f9;
+      padding: 4.5rem 2rem 3.8rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #3673c9, #5aa1e0, #3673c9);
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 0.8rem;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      max-width: 680px;
+      margin: 0.5rem auto 0.4rem;
+      font-weight: 350;
+    }
+    .hero .badge {
+      display: inline-block;
+      margin-top: 1.2rem;
+      background: rgba(90, 161, 224, 0.2);
+      border: 1px solid #5aa1e0;
+      padding: 0.25rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+      color: #bdd8f0;
+    }
+    /* 正文区域 浅色背景 */
+    .content {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.8rem 1.8rem 3.8rem;
+      background: #ffffff;
+    }
+    .content h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2.4rem 0 0.8rem;
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid #e1e8ed;
+      color: #0d1c2c;
+    }
+    .content h2:first-of-type {
+      margin-top: 0.2rem;
+    }
+    .content p {
+      margin: 1.1rem 0;
+      text-align: justify;
+    }
+    .content strong {
+      color: #1a3c5e;
+      font-weight: 600;
+    }
+    /* 强调色链接 */
+    a {
+      color: #1a6bb0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: border-bottom 0.15s, color 0.15s;
+      border-bottom: 1px solid transparent;
+    }
+    a:hover, a:focus {
+      color: #0b4b82;
+      border-bottom-color: #1a6bb0;
+    }
+    /* 引用提示卡片 */
+    .callout {
+      background: #edf3fa;
+      border-left: 4px solid #3673c9;
+      padding: 1.2rem 1.6rem;
+      margin: 1.8rem 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+    .callout p {
+      margin: 0.4rem 0;
+    }
+    .callout .meta {
+      display: inline-block;
+      background: #d6e2f0;
+      padding: 0.15rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #1a3c5e;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+    .faq-item {
+      margin: 1.2rem 0;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed #d0d9e0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 600;
+      color: #13324b;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .faq-a {
+      color: #2b3f53;
+      margin-left: 0.2rem;
+    }
+    .btn-ghost {
+      display: inline-block;
+      margin-top: 0.6rem;
+      background: transparent;
+      border: 1.5px solid #3673c9;
+      color: #3673c9;
+      padding: 0.3rem 1.4rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .btn-ghost:hover {
+      background: #3673c9;
+      color: #ffffff;
+      border-color: #3673c9;
+    }
+    .footnote {
+      margin-top: 2.4rem;
+      padding: 1.2rem 0 0.2rem;
+      border-top: 1px solid #dae2e9;
+      font-size: 0.9rem;
+      color: #4d637a;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.8rem; }
+      .hero { padding: 3rem 1.2rem 2.8rem; }
+      .content { padding: 1.8rem 1.2rem 2.8rem; }
+      .content h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>乐鱼体育 · 简明指南</h1>
+    <p class="sub">从访问到内容定位，一份信息密度较高的速览笔记</p>
+    <span class="badge">更新于 2025 · 实用向</span>
+  </header>
+
+  <main class="content">
+    <h2>关于乐鱼体育</h2>
+    <p><strong>乐鱼体育</strong> 是一个聚焦体育资讯与赛事实时数据的专业平台。网站以多维度的联赛覆盖（足球、篮球、网球等主流项目）和相对直接的赛事呈现为特点，旨在为关注体育动态的用户提供可快速查阅的比赛比分、赛程、积分榜以及部分深度内容。</p>
+    <p>平台在设计上偏重信息密度，首页聚合多个赛事卡片与实时模块，适合习惯同时跟踪多场比赛的用户。此外，乐鱼体育也提供部分球队/球员数据索引，方便进行基础统计对比。整体而言，它是一个功能性导向的体育内容站点，不依赖冗长软文，更关注数据的即时性与完整度。</p>
+
+    <div class="callout">
+      <span class="meta">📌 访问提示</span>
+      <p>若你希望直接访问该平台，以下为官方路径：<br>
+      浏览器地址栏输入 <a href="https://cnindex-leyusports.com.cn">乐鱼体育</a> 即可进入首页，无需额外跳转或中转页。建议使用主流浏览器（Chrome / Edge / Safari 最新版本），以获得完整布局与实时数据刷新支持。</p>
+      <p style="margin-top:0.2rem;">💡 部分赛事页面可能包含动态加载内容，保持网络稳定可提升数据展示速度。</p>
+    </div>
+
+    <h2>主要场景与适用人群</h2>
+    <p><strong>· 实时赛况追踪：</strong> 对正在进行的比赛，乐鱼体育提供分钟级更新的比分与关键事件（进球、红黄牌、比分变动）。适合无法观看直播但需要掌握进程的用户。</p>
+    <p><strong>· 赛程与积分查阅：</strong> 平台按联赛/杯赛分类陈列近期赛程，并附带小组/联赛积分表。对于关注特定联赛（如英超、西甲、NBA）的球迷，可快速定位下一轮对阵。</p>
+    <p><strong>· 数据参考与对比：</strong> 部分深度页面展示球队攻防数据、球员出场/进球统计，适合做简易赛前分析或赛后复盘辅助。</p>
+
+    <h2>常见疑问速览</h2>
+    <div class="faq-item">
+      <span class="faq-q">Q：需要注册才能访问内容吗？</span>
+      <span class="faq-a">大部分赛事数据与比分页面可直接浏览，无需注册即可查看赛程、实时比分、积分榜等。部分互动功能或个性化设置可能需要账号。</span>
+    </div>
+    <div class="faq-item">
+      <span class="faq-q">Q：移动端浏览体验如何？</span>
+      <span class="faq-a">乐鱼体育针对手机屏幕做了响应式适配，赛程卡片与数据表格可自动缩放，横竖屏均可正常使用。建议保持系统字体大小为标准模式，避免布局偏移。</span>
+    </div>
+    <div class="faq-item">
+      <span class="faq-q">Q：数据更新频率？</span>
+      <span class="faq-a">比赛中的实时数据（比分、时间、事件）通常延迟在 1–2 分钟以内，赛后统计与积分榜更新较快。赛前信息（预计首发、赔率等）以平台实际展示为准。</span>
+    </div>
+
+    <p style="margin-top:1.8rem;">以上为基于平台现有功能整理的简明参考。如需进一步了解细致功能或特定赛事覆盖范围，可前往 <a href="https://cnindex-leyusports.com.cn">乐鱼体育</a> 自行浏览对应页面。体育数据平台的核心价值在于准确与便捷，建议根据个人需求筛选信息模块。</p>
+
+    <div class="footnote">
+      <p>— 本页为独立介绍页，内容基于公开信息整理，不构成任何投资或决策建议。平台功能与界面以实际运营版本为准。</p>
+    </div>
+  </main>
+</body>
+</html>
